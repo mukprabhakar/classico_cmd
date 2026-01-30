@@ -98,10 +98,26 @@ class _MyHomePageState extends State<MyHomePage> {
             ? Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('You have pushed the button this many times:'),
-                  Text(
-                    '\$_counter',
-                    style: Theme.of(context).textTheme.headlineMedium,
+                  // const Text('You have pushed the button this many times:'),
+                  // Text(
+                  //   '$_counter',
+                  //   style: Theme.of(context).textTheme.headlineMedium,
+                  // ),
+                  const SizedBox(height: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      // First button action
+                      print('First button clicked');
+                    },
+                    child: const Text('Click'),
+                  ),
+                  const SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      // Second button action
+                      print('Second button clicked');
+                    },
+                    child: const Text('Click'),
                   ),
                 ],
               )
